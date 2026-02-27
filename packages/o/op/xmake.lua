@@ -4,7 +4,7 @@ package("op")
     set_license("MIT")
     set_homepage("https://github.com/Tigole/ObjectsPool.git")
 
-    add_urls("https://github.com/myrepo/foo.git")
+    add_urls("https://github.com/Tigole/ObjectsPool.git")
     add_versions("1.0", "5c9afe4bab70f39fc210806a84b0f279706a7509")
 
     on_install(function (package)
