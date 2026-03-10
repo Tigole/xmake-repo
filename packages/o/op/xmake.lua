@@ -7,7 +7,8 @@ package("op")
     add_urls("https://github.com/Tigole/ObjectsPool.git")
     add_versions("1.0", "5c9afe4bab70f39fc210806a84b0f279706a7509")
     add_versions("1.1", "e7d48ecffa663f7a6037eef93117d077762b73dd")
-    add_versions("HEAD", "e7d48ecffa663f7a6037eef93117d077762b73dd")
+    add_versions("1.2", "623acf8a47c0d8410998c56f45756eb17187c0f8")
+    add_versions("HEAD", "623acf8a47c0d8410998c56f45756eb17187c0f8")
 
     on_install(function (package)
         local configs = {}
