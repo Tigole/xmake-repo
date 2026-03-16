@@ -5,7 +5,7 @@ package("tinyxml-boosted")
     set_homepage("https://github.com/Tigole/TinyXML_Boosted.git")
 
     add_urls("https://github.com/Tigole/TinyXML_Boosted.git")
-    add_versions("1.x", "9dc91a9620ed3be8ec267539600385d51c9a2272")
+    add_versions("1.x", "f25fb25fae3b561ac92aceaba5ee71f311514013")
 
     on_install(function (package)
         local configs = {}
