@@ -1,4 +1,4 @@
-package("op")
+package("tinyxml-boosted")
     set_kind("library", {headeronly = true})
     set_description("Objects container implementation based on Wookash &amp; Anton Mikhailov discussion https://www.youtube.com/watch?v=-m7lhJ_Mzdg")
     set_license("MIT")

@@ -1,11 +1,11 @@
-package("op")
+package("lys-types")
     set_kind("library", {headeronly = true})
     set_description("Part of the Lys Framwork - Types")
     set_license("zlib")
     set_homepage("https://github.com/Tigole/Lys-Types.git")
 
     add_urls("https://github.com/Tigole/Lys-Types.git")
-    add_versions("HEAD", "bcd87932e98195ef23d9cf5c57cd0de620136c24")
+    add_versions("HEAD", "c90209f08adfe108f3988359a143c4f6b9284e21")
 
     on_install(function (package)
         local configs = {}
