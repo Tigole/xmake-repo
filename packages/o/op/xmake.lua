@@ -8,7 +8,7 @@ package("op")
     add_versions("1.0", "5c9afe4bab70f39fc210806a84b0f279706a7509")
     add_versions("1.1", "e7d48ecffa663f7a6037eef93117d077762b73dd")
     add_versions("1.2", "623acf8a47c0d8410998c56f45756eb17187c0f8")
-    add_versions("HEAD", "418d13503650bb5249cea26c24e9e6a32995767c")
+    add_versions("HEAD", "73b839d3522bd2a15e211b139b851fd8ba22a398")
 
     on_install(function (package)
         local configs = {}
