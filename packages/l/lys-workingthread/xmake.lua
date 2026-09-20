@@ -1,4 +1,4 @@
-package("lys-config")
+package("lys-workingthread")
     set_kind("library", {headeronly = true})
     set_description("Part of the Lys Framwork - Working Thread")
     set_license("zlib")
