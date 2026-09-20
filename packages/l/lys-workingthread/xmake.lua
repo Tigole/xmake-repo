@@ -8,11 +8,7 @@ package("lys-workingthread")
     add_versions("0.0.0", "3105ed5041bfe5b19dc6eb5119be1c102ce42f05")
 
     on_install(function (package)
-        local configs = {}
-        if package:config("shared") then
-            configs.kind = "shared"
-        end
-        import("package.tools.xmake").install(package, configs)
+        import("package.tools.xmake").install(package)
     end)
 
     on_test(function (package)

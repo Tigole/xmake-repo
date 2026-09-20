@@ -8,11 +8,7 @@ package("lys-tiledmaploading")
     add_versions("0.0.0", "f27056cec9ea21ae60504e50b94cccc1511ef64a")
 
     on_install(function (package)
-        local configs = {}
-        if package:config("shared") then
-            configs.kind = "shared"
-        end
-        import("package.tools.xmake").install(package, configs)
+        import("package.tools.xmake").install(package)
     end)
 
     on_test(function (package)

@@ -8,11 +8,7 @@ package("lys-types")
     add_versions("0.0.0", "71fca69c44b13d90aa11f4faa949634c6fe2c894")
 
     on_install(function (package)
-        local configs = {}
-        if package:config("shared") then
-            configs.kind = "shared"
-        end
-        import("package.tools.xmake").install(package, configs)
+        import("package.tools.xmake").install(package)
     end)
 
     on_test(function (package)
