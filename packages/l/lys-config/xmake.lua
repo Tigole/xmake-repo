@@ -5,7 +5,7 @@ package("lys-config")
     set_homepage("https://github.com/Tigole/Lys-Config.git")
 
     add_urls("https://github.com/Tigole/Lys-Config.git")
-    add_versions("0.0.0", "6a5a19d5a3610abdf9f1fc544b5073e7084cdc2c")
+    add_versions("0.0.0", "7af5a16221ec36a592674051bf132cd5fa407230")
 
     on_install(function (package)
         local configs = {}
