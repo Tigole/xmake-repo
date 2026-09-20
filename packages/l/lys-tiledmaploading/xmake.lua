@@ -5,7 +5,7 @@ package("lys-tiledmaploading")
     set_homepage("https://github.com/Tigole/Lys-TiledMapLoading.git")
 
     add_urls("https://github.com/Tigole/Lys-TiledMapLoading.git")
-    add_versions("HEAD", "f27056cec9ea21ae60504e50b94cccc1511ef64a")
+    add_versions("0.0.0", "f27056cec9ea21ae60504e50b94cccc1511ef64a")
 
     on_install(function (package)
         local configs = {}
