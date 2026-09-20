@@ -5,7 +5,7 @@ package("lys-config")
     set_homepage("https://github.com/Tigole/Lys-Config.git")
 
     add_urls("https://github.com/Tigole/Lys-Config.git")
-    add_versions("0.0.0", "7af5a16221ec36a592674051bf132cd5fa407230")
+    add_versions("0.0.0", "81d11dfb962d2c56b129e8217a52ecc943240600")
 
     on_install(function (package)
         import("package.tools.xmake").install(package)
