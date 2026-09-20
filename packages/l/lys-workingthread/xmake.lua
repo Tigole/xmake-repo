@@ -5,7 +5,7 @@ package("lys-config")
     set_homepage("https://github.com/Tigole/Lys-WorkingThread.git")
 
     add_urls("https://github.com/Tigole/Lys-WorkingThread.git")
-    add_versions("0.0.0", "4b47cd3d38bf55141766015320589760811992a9")
+    add_versions("0.0.0", "3105ed5041bfe5b19dc6eb5119be1c102ce42f05")
 
     on_install(function (package)
         local configs = {}
