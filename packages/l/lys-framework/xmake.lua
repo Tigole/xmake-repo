@@ -2,10 +2,10 @@ package("lys-workingthread")
     set_kind("library", {headeronly = true})
     set_description("Part of the Lys Framwork - Working Thread")
     set_license("zlib")
-    set_homepage("https://github.com/Tigole/Lys-WorkingThread.git")
+    set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
-    add_urls("https://github.com/Tigole/Lys-WorkingThread.git")
-    add_versions("0.0.0", "3105ed5041bfe5b19dc6eb5119be1c102ce42f05")
+    add_urls("https://github.com/Tigole/Lys-Framework.git")
+    add_versions("0.0.0", "866124aa40ae97f5f59fa3b0163f64e3ad5dff35")
 
     on_install(function (package)
         import("package.tools.xmake").install(package)
