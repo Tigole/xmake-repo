@@ -1,6 +1,6 @@
-package("lys-workingthread")
-    set_kind("library", {headeronly = true})
-    set_description("Part of the Lys Framwork - Working Thread")
+package("lys-framework")
+    set_kind("library")
+    set_description("Lys Framwork")
     set_license("zlib")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
