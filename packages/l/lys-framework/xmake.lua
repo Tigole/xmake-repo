@@ -5,7 +5,7 @@ package("lys-framework")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
     add_urls("https://github.com/Tigole/Lys-Framework.git")
-    add_versions("0.0.0", "e914fa1648bea966f49583ba0595c2d8c7dad9fb")
+    add_versions("0.0.0", "25c95f0e7059b61ab090618d56a59135e3a9afca")
 
     on_install(function (package)
         import("package.tools.xmake").install(package)
