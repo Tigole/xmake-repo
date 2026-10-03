@@ -5,7 +5,7 @@ package("lys-framework")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
     add_urls("https://github.com/Tigole/Lys-Framework.git")
-    add_versions("0.0.0", "133f3c1c9b0bdf7885971b895e65c02af38c4b32")
+    add_versions("0.0.0", "00d68f9e361a36aa90dad006e30cafb1a88dfcc3")
 
     add_configs("backend", {values = {"sfml", "raylib"}})
 
