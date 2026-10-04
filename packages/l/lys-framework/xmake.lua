@@ -1,11 +1,11 @@
 package("lys-framework")
     set_kind("library")
-    set_description("Lys Framwork")
+    set_description("Lys Framework")
     set_license("zlib")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
     add_urls("https://github.com/Tigole/Lys-Framework.git")
-    add_versions("0.0.0", "5e2b4a32efece75ed6f34502ae1ee257370446da")
+    add_versions("0.0.0", "829ecaf8c7ed112dffe3167c9289ff14d2898b4d")
 
     add_configs("backend", {values = {"sfml", "raylib"}})
 
