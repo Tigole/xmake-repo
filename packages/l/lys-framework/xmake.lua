@@ -19,6 +19,7 @@ package("lys-framework")
         end
 
         package:add("deps", "tinyxml-boosted")
+        package:add("defines", "LYS_BUILD_STATIC")
 
     end)
 
