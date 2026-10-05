@@ -32,12 +32,6 @@ package("lys-framework")
 
         configs.backend = package:config("backend")
 
-        local config_file_path = "include/lys/lys-config.hpp"
-        if (configs.backend == "sfml") then
-            local content = io.readfile(config_file_path)
-            content = content:gsub("/// @xmake-config - BACKEND", "#define LYS_CONFIG_BACKEND_SFML")
-            io.writefile(config_file_path, content)
-        end
         import("package.tools.xmake").install(package, configs)
     end)
 
