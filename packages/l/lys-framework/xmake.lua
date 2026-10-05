@@ -14,8 +14,10 @@ package("lys-framework")
 
         if backend == "sfml" then
             package:add("deps", "sfml")
+            package:add("defines", "LYS_CONFIG_BACKEND_SFML")
         elseif backend == "raylib" then
             package:add("deps", "raylib")
+            package:add("defines", "LYS_CONFIG_BACKEND_RAYLIB")
         end
 
         package:add("deps", "tinyxml-boosted")
