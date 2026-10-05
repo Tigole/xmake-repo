@@ -11,7 +11,7 @@ package("lys-framework")
 
     on_load(function(package)
         local backend = package:config("backend")
-
+        print("backend: " .. backend)
         if backend == "sfml" then
             package:add("deps", "sfml")
             package:add("defines", "LYS_CONFIG_BACKEND_SFML")
