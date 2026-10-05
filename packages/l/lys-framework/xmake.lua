@@ -28,7 +28,11 @@ package("lys-framework")
     end)
 
     on_install(function (package)
-        import("package.tools.xmake").install(package)
+        local configs = {}
+
+        configs.backend = package:config("backend")
+
+        import("package.tools.xmake").install(package, configs)
     end)
 
     on_test(function (package)
