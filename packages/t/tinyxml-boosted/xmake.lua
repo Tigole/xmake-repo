@@ -14,6 +14,8 @@ package("tinyxml-boosted")
             configs.kind = "shared"
         end
         package:add("deps", "tinyxml 2.6.2")
+        print(package:name())
+        print(package:get("deps"))
         import("package.tools.xmake").install(package, configs)
     end)
 
