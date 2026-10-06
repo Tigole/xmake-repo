@@ -7,6 +7,10 @@ package("lys-tiledmaploading")
     add_urls("https://github.com/Tigole/Lys-TiledMapLoading.git")
     add_versions("0.0.0", "f27056cec9ea21ae60504e50b94cccc1511ef64a")
 
+    on_load(function(package)
+        package:add("deps", "tinyxml")
+    end)
+
     on_install(function (package)
         import("package.tools.xmake").install(package)
     end)

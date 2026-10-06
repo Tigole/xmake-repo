@@ -5,7 +5,7 @@ package("lys-framework")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
     add_urls("https://github.com/Tigole/Lys-Framework.git")
-    add_versions("0.0.1", "8942a07f3b160fd33f6abd3516ca1d5cdef7e5e0")
+    add_versions("0.0.2", "1993fc294008113940a104f57118b42d99f45bf6")
 
     add_configs("backend", {values = {"sfml", "raylib"}})
 
@@ -23,7 +23,6 @@ package("lys-framework")
 
         package:add("deps", "tinyxml-boosted")
         package:add("defines", "LYS_BUILD_STATIC")
-        print(package:get("defines"))
 
     end)
 
