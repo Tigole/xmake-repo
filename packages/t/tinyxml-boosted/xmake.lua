@@ -6,7 +6,7 @@ package("tinyxml-boosted")
 
     add_urls("https://github.com/Tigole/TinyXML_Boosted.git")
     add_versions("1.x", "98260a3c69acebaf020b4272b5da497a6ed482a7")
-    add_versions("2.0.0", "955bddbb6cbc734b1cc90e995f4f3c2a8fe7b8a1")
+    add_versions("2.0.0", "f82bc5f7977e03a5af0d8e7ad91f22c75ad6f18e")
 
     on_load(function (package)
         package:add("deps", "tinyxml 2.6.2")
