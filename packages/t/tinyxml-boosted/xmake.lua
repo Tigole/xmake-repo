@@ -6,14 +6,14 @@ package("tinyxml-boosted")
 
     add_urls("https://github.com/Tigole/TinyXML_Boosted.git")
     add_versions("1.x", "98260a3c69acebaf020b4272b5da497a6ed482a7")
-    add_versions("2.0.0", "b2ed3444e0247eb18195d0b1f78974fcc4dad52f")
+    add_versions("2.0.0", "955bddbb6cbc734b1cc90e995f4f3c2a8fe7b8a1")
 
     on_install(function (package)
         local configs = {}
         if package:config("shared") then
             configs.kind = "shared"
         end
-        package:add("deps", "tinyxml 2.6.2")
+        --package:add("deps", "tinyxml 2.6.2")
         print(package:name())
         print(package:get("deps"))
         import("package.tools.xmake").install(package, configs)
