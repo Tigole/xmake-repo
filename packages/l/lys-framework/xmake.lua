@@ -5,7 +5,7 @@ package("lys-framework")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
     add_urls("https://github.com/Tigole/Lys-Framework.git")
-    add_versions("0.0.2", "f82bc5f7977e03a5af0d8e7ad91f22c75ad6f18e")
+    add_versions("0.0.2", "94ad6fd59f1cf0f9d5dc93f31de2edaad612d5d3")
 
     add_configs("backend", {values = {"sfml", "raylib"}})
 
@@ -32,6 +32,7 @@ package("lys-framework")
         local configs = {}
 
         configs.backend = package:config("backend")
+        configs.shared = package:config("shared")
 
         import("package.tools.xmake").install(package, configs)
     end)
