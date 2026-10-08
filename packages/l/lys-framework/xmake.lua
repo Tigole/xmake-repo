@@ -32,7 +32,7 @@ package("lys-framework")
         local configs = {}
 
         configs.backend = package:config("backend")
-        configs.shared = package:config("shared")
+        --configs.shared = package:config("shared")
 
         import("package.tools.xmake").install(package, configs)
     end)
