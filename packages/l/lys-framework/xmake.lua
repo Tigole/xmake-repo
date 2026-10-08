@@ -14,7 +14,7 @@ package("lys-framework")
         print("backend: " .. backend)
 
         if backend == "sfml" then
-            package:add("deps", "sfml")
+            package:add("deps", "sfml", {configs={shared=true}})
             package:add("defines", "LYS_CONFIG_BACKEND_SFML", {public = true})
         elseif backend == "raylib" then
             package:add("deps", "raylib")
