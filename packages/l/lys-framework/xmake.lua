@@ -5,19 +5,22 @@ package("lys-framework")
     set_homepage("https://github.com/Tigole/Lys-Framework.git")
 
     add_urls("https://github.com/Tigole/Lys-Framework.git")
-    add_versions("0.0.2", "94ad6fd59f1cf0f9d5dc93f31de2edaad612d5d3")
+    add_versions("0.0.2", "ef8fcaac2755ed1cfaca8a750275a86a02d270a6")
 
     add_configs("backend", {values = {"sfml", "raylib"}})
 
     on_load(function(package)
         local backend = package:config("backend")
-        print("backend: " .. backend)
+
+        if (backend ~= nil) then
+            print("backend: " .. backend)
+        end
 
         if backend == "sfml" then
-            package:add("deps", "sfml", {configs={shared=true}})
+            --package:add("deps", "sfml", {configs={shared=true}})
             package:add("defines", "LYS_CONFIG_BACKEND_SFML", {public = true})
         elseif backend == "raylib" then
-            package:add("deps", "raylib")
+            --package:add("deps", "raylib")
             package:add("defines", "LYS_CONFIG_BACKEND_RAYLIB", {public = true})
         end
 
